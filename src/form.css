@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Main-Form{
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    /* border: solid RED; */
+    justify-content: center;
+    background:#67C6F2 ;
+    /* background: linear-gradient(#719aa4 , #6dd5ed,#6dd5ed,#428fa4); */
+}
+.main{
+    padding: 4rem 2rem 5rem 2rem;
+    width: 70%;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: solid RED; */
+    border-radius: .8rem;
+    background: rgb(255, 255, 255);
+    /* 223, 228, 259 */
+    /* background: linear-gradient( #614385,#516395); */
+    /* background: linear-gradient(#ffafbd,#ffc3a0); */
+    /* background: rgb(169, 212, 240); */
+    color: black;
+}
+.head-label{
+    display: grid;
+    justify-items: center;
+    font-size: 2rem;
+}
+.forms{
+    display: grid;
+    grid-template-columns: 23rem;
+}
+.labels{
+    color: rgb(25, 24, 24);
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+.input-box{
+    width: 90%;
+    padding: .5rem;
+    height: 2em;
+    border: 1px solid #2193b0;
+    border-radius: .4rem; 
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+    font-size: 1.3rem;
+}
+.anima{
+    
+    outline-color: red;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: shake .09s ease 4;
+}
+.anima::after{
+    animation: shak .08s ease 2;
+
+}
+@keyframes shak{
+    0% { margin-left: 0rem;
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red; 
+    }
+    /* 12.5%{margin-top: -.1rem;} */
+    25% { margin-left: 0.25rem;
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red;  }
+    75% { margin-left: -0.25rem; 
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red; }
+
+    100% { margin-left: 0rem; 
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red; }
+}
+@keyframes shake{
+    0% { margin-left: 0rem;
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red; 
+     }
+    /* 12.5%{margin-top: -.1rem;} */
+    25% { margin-left: 0.25rem;
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red; 
+     }
+    75% { margin-left: -0.25rem; 
+        border: 1px solid red;
+        outline-color: red;
+        box-shadow: 0 0 3px 3px  red; }
+    100% { margin-left: 0rem; outline-color: red;}
+}
+
+/* -------------------------Button Css------------------------- */
+.submit-btn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.9em 2em;
+    border: 3px solid #FF0072;
+    /* border-radius: 0px; */
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    border-radius: 1.3rem;
+
+   }
+   
+   .submit-btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    border-radius: 1rem;
+    background-color: #FF0072;
+    z-index: -1;
+   }
+   
+   .submit-btn:hover, .submit-btn:focus {
+    color: white;
+   }
+   
+   .submit-btn:hover:before, .submit-btn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    border-radius: 1rem;
+
+   }
+   
+   .submit-btn:active {
+    border-radius: 1rem;
+    transform: scale(0.9);
+   }
+/* .submit-btn {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(251, 209, 209);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+   .submit-btn:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+   .submit-btn:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   } */
+/* .submit-btn{
+    background: linear-gradient(#42275a , #734b6d);
+    height: 2rem;
+    width: 90%;
+    border-radius: .5rem; 
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffc3a0;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background: linear-gradient(#594869 , #9f6f98);
+    
+} */
+
+.icons{
+    cursor: pointer;
+    background: none;
+    color:black;
+    width: 2rem;
+    font-size: 1.3rem;
+    height: 1.8rem;
+    border: none;
+}
+.errors{
+    width: 300px;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    color:red;
+    /* background: rgb(182, 165, 232); */
+}
+
+
+
+@media (max-width:850){
+
+.main{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 80%; */
+    border: solid red;
+    background: red;
+}
+.forms{
+    display: flex;
+    width: 100%;
+    border: solid red;
+
+}
+}

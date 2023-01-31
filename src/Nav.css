@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  /* position: relative; */
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  /* align-items: left; */
+  justify-content: center;
+  width: 100%;
+  /* height: 64px; */
+  position: relative;
+  background: rgb(51 51 51 / 94%);
+}
+.nav {
+  position: relative;
+  border-radius: 5px;
+
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 64px;
+  /* border: 2px dotted yellow; */
+  /* position: relative; */
+  background: rgb(51 51 51 / 94%);
+}
+.logo {
+  /* border: 2px solid red; */
+  /* margin: 15px; */
+  width: 20%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+/* End */
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+  /* border: 2px solid rgb(235, 15, 15); */
+}
+.ul {
+  /* border: 2px solid rgb(235, 194, 194); */
+  width: 50%;
+  display: flex;
+  /* position: absolute; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ul .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  /* padding: 4px; */
+  /* height: 100%; */
+  width: 20%;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 5px 1px #4895ef; */
+  background: #4d6682;
+  font-size: 18px;
+}
+
+.Link {
+  font-size: 22px;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .Link:hover {
+  text-decoration: underline tomato;
+} */
+/* End */
+.toggle-btn {
+  display: none;
+  position: absolute;
+  align-items: center;
+  /* width: 6%; */
+  width: 38px;
+  height: 35px;
+  /* height: 20%; */
+  top: 10px;
+  right: 10px;
+  /* border: 2px solid red; */
+}
+.toggle-btn1 {
+  /* border: 2px solid rgb(154, 125, 125); */
+  /* right: 2px; */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+
+  transition: 2sec ease all linear;
+}
+.bar {
+  /* border: 2px solid burlywood; */
+  border-radius: 10px;
+
+  background: #4895ef;
+  width: 100%;
+  height: 5px;
+}
+
+.img-logo {
+  /* border: 2px solid red; */
+  height: 45px;
+  width: 45px;
+  margin: 0 15px 0 0;
+}
+.logo-name {
+  font-size: 30px;
+}
+.nav-icon {
+  position: relative;
+  /* border: 2px solid; */
+  width: 25%;
+  align-items: center;
+  display: flex;
+  /* justify-content: center; */
+  /* flex-wrap: nowrap; */
+  /* background: red; */
+}
+.ul-icons {
+  width: 100%;
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ul-icons li {
+  display: flex;
+  background: rgba(28, 28, 28, 0.299);
+  list-style: none;
+  align-items: center;
+  border-radius: 10px;
+  /* justify-content: space-evenly; */
+}
+.img-icon {
+  /* background: red; */
+  /* border: 1px solid rgb(31, 59, 182); */
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 850px) {
+  .nav-items {
+    /* border: 2px solid blue; */
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .nav {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid #4895ef; */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+  }
+  .nav-icon {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    /* left: 1px; */
+    align-items: left;
+    justify-content: start;
+  }
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ul {
+    height: 220px;
+    /* min-width: 400px; */
+    width: 85px;
+    display: flex;
+    /* border: #4895ef 3px dotted; */
+
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: none; */
+    /* margin-bottom: 20px; */
+  }
+  .ul  .a {
+
+    border: #4895ef 3px solid;
+    background: none;
+    width: 80px;
+  }
+  .ul  .a:hover{
+    
+    background: orange;
+  }
+ 
+  .nav-items .actives {
+    display: grid;
+    /* position: absolute; */
+  }
+}
